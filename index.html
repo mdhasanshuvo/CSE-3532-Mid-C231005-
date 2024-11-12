@@ -1,57 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <!-- Tailwind and daisyUI Cdn -->
+  <!-- Tailwind and daisyUI Cdn -->
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
-      rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-  <body class="container mx-auto">
+<body class="container mx-auto px-2">
 
-    <!-- Header section Start -->
+  <!-- Header section Start -->
 
-    <header>
+  <header>
 
-      <!-- Nav section start -->
-      <div class="navbar bg-base-100">
-        <div class="navbar-start flex flex-row-reverse justify-between w-full ">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>About us</a></li>
-              <li><a>Services</a></li>
-              <li><a>Use Cases</a></li>
-              <li><a>Pricing</a></li>
-              <li><a>Blog</a></li>
-            </ul>
+    <!-- Nav section start -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start flex flex-row-reverse justify-between w-full ">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-          <img src="asset/logo-big.png" alt>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 min-w-max p-2 shadow right-0">
             <li><a>About us</a></li>
             <li><a>Services</a></li>
             <li><a>Use Cases</a></li>
@@ -59,62 +36,72 @@
             <li><a>Blog</a></li>
           </ul>
         </div>
-        <div class="navbar-end hidden lg:flex">
-          <a class="btn bg-white border-black">Request a quote</a>
-        </div>
+        <img src="asset/logo-big.png" class="w-1/2 md:w-auto" alt>
       </div>
-      <!-- Nav section End -->
-
-      <!-- Banner section start -->
-      <div class="hero py-24">
-        <div class="hero-content flex-col-reverse lg:flex-row-reverse">
-          <img class="w-1/2"
-            src="asset/cover.png" />
-          <div class="pr-6">
-            <h1 class="text-5xl font-bold">Navigating the digital landscape for
-              success</h1>
-            <p class="py-6">
-              Our digital marketing agency helps businesses grow and succeed
-              online through a range of services including SEO, PPC, social
-              media marketing, and content creation.
-            </p>
-            <button class="btn btn-primary bg-black w-full lg:w-auto">Book a consultation</button>
-          </div>
-        </div>
-      </div>
-      <!-- Banner section End -->
-
-    </header>
-
-    <!-- Header section End -->
-
-    <!-- Main section start -->
-
-    <main>
-
-      <!--  -->
-      <section class="">
-        <ul class="flex justify-between">
-          <li><img src="asset/amazon.png" alt=""></li>
-          <li><img src="asset/dribble.png" alt=""></li>
-          <li><img src="asset/hubspot.png" alt=""></li>
-          <li><img src="asset/notion.png" alt=""></li>
-          <li><img src="asset/netflix.png" alt=""></li>
-          <li><img src="asset/zoom.png" alt=""></li>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>About us</a></li>
+          <li><a>Services</a></li>
+          <li><a>Use Cases</a></li>
+          <li><a>Pricing</a></li>
+          <li><a>Blog</a></li>
         </ul>
-      </section>
-      <!--  -->
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <a class="btn bg-white border-black">Request a quote</a>
+      </div>
+    </div>
+    <!-- Nav section End -->
 
-    </main>
+    <!-- Banner section start -->
+    <div class="hero py-6 lg:py-24">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img class="lg:w-1/2" src="asset/cover.png" />
+        <div class="">
+          <h1 class="text-5xl font-bold">Navigating the digital landscape for
+            success</h1>
+          <p class="py-6">
+            Our digital marketing agency helps businesses grow and succeed
+            online through a range of services including SEO, PPC, social
+            media marketing, and content creation.
+          </p>
+          <button class="btn btn-primary bg-black w-full lg:w-auto">Book a consultation</button>
+        </div>
+      </div>
+    </div>
+    <!-- Banner section End -->
 
-    <!-- Main section end -->
+  </header>
 
-    <!-- footer section start -->
-    <footer>
+  <!-- Header section End -->
 
-    </footer>
-    <!-- footer section End -->
+  <!-- Main section start -->
 
-  </body>
+  <main>
+
+    <!--  -->
+    <section class="">
+      <ul class="grid grid-cols-3 lg:grid-cols-6 justify-items-center gap-2">
+        <li><img src="asset/amazon.png" alt=""></li>
+        <li><img src="asset/dribble.png" alt=""></li>
+        <li><img src="asset/hubspot.png" alt=""></li>
+        <li><img src="asset/notion.png" alt=""></li>
+        <li><img src="asset/netflix.png" alt=""></li>
+        <li><img src="asset/zoom.png" alt=""></li>
+      </ul>
+    </section>
+    <!--  -->
+
+  </main>
+
+  <!-- Main section end -->
+
+  <!-- footer section start -->
+  <footer>
+
+  </footer>
+  <!-- footer section End -->
+
+</body>
 
 </html>
